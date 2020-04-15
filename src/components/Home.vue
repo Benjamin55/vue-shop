@@ -1,18 +1,14 @@
 <template>
   <div>
     <Navbar></Navbar>
+    <Landing></Landing>
+    <Products></Products>
   </div>
 </template>
 
-
-
 <script>
-import Navbar from "@/components/Navbar.vue";
 export default {
-  name: "About",
-  components: {
-    Navbar
-  }
+  name: "Home"
 };
 </script>
 
