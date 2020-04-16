@@ -5,6 +5,9 @@ import Admin from "@/components/Admin.vue";
 import About from "@/views/About.vue";
 import Overview from "@/views/Overview.vue";
 import Products from "@/views/Products.vue";
+import Orders from "@/views/Orders.vue";
+import Login from "@/components/Login.vue";
+import Register from "@/components/Register.vue";
 
 Vue.use(VueRouter);
 
@@ -17,6 +20,18 @@ Vue.use(VueRouter);
       name: "Home",
       component: Home
     },
+        {
+          path: "/register",
+          name: "register",
+          component: Register
+        },
+        {
+          path: "/login",
+          name: "login",
+          component: Login
+        },
+      
+    
     {
       path: "/admin",
       name: "admin",
@@ -31,6 +46,11 @@ Vue.use(VueRouter);
           path:"products",
           name: "products",
           component: Products
+        },
+        {
+          path:"orders",
+          name: "orders",
+          component: Orders
         }
       ]
     },

@@ -3,10 +3,10 @@
 
  <div class="overview">
              <div class="">
-                 <h1>Overview Page</h1>
+                 <h1>Orders</h1>
              </div>
              <div class="col-md-6">
-                 <img src="/svg/overview.svg" alt="" class="img-fluid">
+                 <img src="/svg/order.svg" alt="" class="img-fluid">
              </div>
    
      </div>  
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-    name: "Overview"
+    name: "Orders"
 
 }
 </script>
