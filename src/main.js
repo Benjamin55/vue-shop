@@ -20,11 +20,8 @@ Vue.component("Navbar", require("./components/Navbar.vue").default);
 Vue.component("Landing", require("./components/Landing.vue").default);
 Vue.component("Products", require("./components/Products.vue").default);
 Vue.component("Admin", require("./components/Admin.vue").default);
-Vue.component("Login", require("./components/Login.vue").default);
-Vue.component("System", require("./components/System.vue").default);
-Vue.component("Register", require("./components/Register.vue").default);
 
-Vue.component("Hero", require("./components/Hero.vue").default);
+
 
 
 

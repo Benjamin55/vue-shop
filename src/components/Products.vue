@@ -57,7 +57,7 @@ h1 {
   font-size: 64px;
   text-align: center;
   margin-top: 50px;
-  color: #5edb24;
+  color: #4eca144b;
   text-shadow: 2px 5px #474444;
 }
 </style>

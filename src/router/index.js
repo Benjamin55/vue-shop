@@ -7,7 +7,7 @@ import Overview from "@/views/Overview.vue";
 import Products from "@/views/Products.vue";
 import Orders from "@/views/Orders.vue";
 import Login from "@/components/Login.vue";
-import Register from "@/components/Register.vue";
+
 
 Vue.use(VueRouter);
 
@@ -16,22 +16,16 @@ Vue.use(VueRouter);
  export default new VueRouter({
   routes: [
     {
+        path: "/login",
+        name: "login",
+        component: Login
+    },
+    {
       path: "/",
       name: "Home",
       component: Home
     },
-        {
-          path: "/register",
-          name: "register",
-          component: Register
-        },
-        {
-          path: "/login",
-          name: "login",
-          component: Login
-        },
-      
-    
+        
     {
       path: "/admin",
       name: "admin",
@@ -57,7 +51,7 @@ Vue.use(VueRouter);
   
     {
       path: "/about",
-      name: "About",
+      name: "about",
       component: About
     }
   ]

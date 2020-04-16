@@ -1,7 +1,7 @@
-/<template>
+<template>
   <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">ReShop</a>
+      <a href="/" class="navbar-brand">ReShop</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -20,9 +20,8 @@
             <router-link to="/" class="nav-link">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/About" class="nav-link" href="#"
-              >About</router-link
-            >
+            <router-link to="about" class="nav-link" 
+              >About</router-link>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -32,9 +31,8 @@
             placeholder="Search"
             aria-label="Search"
           />
-          <a class="btn btn-success my-2 my-sm-0" data-toggle="modal" data-target="#login" type="submit">
-            Get Start
-          </a>
+          <router-link to="login" >     <button class="btn btn-success " type="button">Login</button> </router-link>
+
         </form>
       </div>
     </nav>
@@ -55,5 +53,16 @@ export default {
   background-color: grey;
   width: 100px;
   height: 100px;
+}
+
+
+.btn-success:hover {
+  color:white;
+}
+
+
+.nav-link {
+  
+  font-size: 1.3rem;
 }
 </style>
