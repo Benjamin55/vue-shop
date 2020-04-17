@@ -6,7 +6,7 @@ import About from "@/views/About.vue";
 import Overview from "@/views/Overview.vue";
 import Products from "@/views/Products.vue";
 import Orders from "@/views/Orders.vue";
-import Login from "@/components/Login.vue";
+
 
 
 Vue.use(VueRouter);
@@ -15,11 +15,7 @@ Vue.use(VueRouter);
 
  export default new VueRouter({
   routes: [
-    {
-        path: "/login",
-        name: "login",
-        component: Login
-    },
+   
     {
       path: "/",
       name: "Home",

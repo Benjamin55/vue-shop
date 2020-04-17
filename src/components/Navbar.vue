@@ -31,11 +31,12 @@
             placeholder="Search"
             aria-label="Search"
           />
-          <router-link to="login" >     <button class="btn btn-success " type="button">Login</button> </router-link>
+          <a class="btn btn-success my-2 my-sm-0" data-toggle="modal" data-target="#login">Get Start</a>
 
         </form>
       </div>
     </nav>
+   
   </div>
 </template>
 
@@ -43,7 +44,7 @@
 export default {
   name: "Navbar",
   components: {
-  
+    
   }
 };
 </script>

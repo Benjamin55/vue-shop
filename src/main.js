@@ -20,6 +20,7 @@ Vue.component("Navbar", require("./components/Navbar.vue").default);
 Vue.component("Landing", require("./components/Landing.vue").default);
 Vue.component("Products", require("./components/Products.vue").default);
 Vue.component("Admin", require("./components/Admin.vue").default);
+Vue.component("Login", require("./components/Login.vue").default);
 
 
 
@@ -39,10 +40,11 @@ Vue.prototype.$firebase = firebase;
 Vue.config.productionTip = false;
 
 
-
-
-
-const firebaseConfig = {
+import 'firebase/firestore'
+import 'firebase/firebase-auth'
+import 'firebase/storage'
+  // Initialize Firebase
+  const config = {
     apiKey: "AIzaSyBK26XkNGvMTlkc3DpeOA4pnm71Qw5FZfs",
     authDomain: "vue-shop-8ba4b.firebaseapp.com",
     databaseURL: "https://vue-shop-8ba4b.firebaseio.com",
@@ -53,7 +55,16 @@ const firebaseConfig = {
     measurementId: "G-RG62VXH6M4"
   };
   
-  firebase.initializeApp(firebaseConfig);
+const fb = firebase.initializeApp(config);
+
+const db = firebase.firestore();
+
+export {fb,db}
+
+
+
+  
+
 
 
 
